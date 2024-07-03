@@ -1,4 +1,4 @@
-name: Performance Testing
+name: Execution Performance
 
 on:
   workflow_dispatch:
@@ -21,11 +21,11 @@ jobs:
         uses: gradle/gradle-build-action@v3
 
       - name: Execute test
-        run: gradle gatlingRun --simulation=pokemonapi.PokeminApiTest
+        run: gradle gatlingRun --simulation=pokemonapi.PokemonApiTest
 
-      - name: Save Report
+      - name: Save report
         if: ${{always()}}
-        uses: actions/upload-artifact@3.1.2
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: gatling report
           path: ./build/reports/gatling
