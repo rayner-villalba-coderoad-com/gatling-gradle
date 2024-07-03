@@ -1,0 +1,10 @@
+name: Rayner Performance Testing
+
+on:
+  workflow_dispatch:
+    inputs:
+      testSuite:
+        type: string
+        description: 'TestSuite'
+        required: true
+        default: 'pokemonapi.PokemonApiTest'
