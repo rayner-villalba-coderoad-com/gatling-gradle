@@ -5,13 +5,14 @@ on:
     inputs:
       testSuite:
         type: string
-        description: 'TestSuite'
+        description: 'testSuite'
         required: true
         default: 'pokemonapi.PokemonApiTest'
+
 jobs:
   execpokemonapi:
     runs-on: ubuntu-latest
-    name: Executing Performance Pokemon API
+    name: Execution Performance Pokemon API
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
