@@ -35,12 +35,12 @@ jobs:
           name: gatling report
           path: ./build/reports/gatling
       - name: "Publish test results"
-          uses: peaceiris/actions-gh-pages@v3.7.3
-          if: ${{ always() }}
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: './build/reports/gatling'
-            keep_files: true
-            user_name: rayner-villalba-coderoad-com
-            user_email: rayner.villalba@mojix.com
-            publish_branch: gh_page
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        if: ${{ always() }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: './build/reports/gatling'
+          keep_files: true
+          user_name: rayner-villalba-coderoad-com
+          user_email: rayner.villalba@mojix.com
+          publish_branch: gh_page
