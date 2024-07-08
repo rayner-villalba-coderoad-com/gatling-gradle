@@ -42,5 +42,5 @@ jobs:
           publish_dir: './build/reports/gatling'
           keep_files: true
           user_name: rayner-villalba-coderoad-com
-          user_email: rayner.villalba@mojix.com
+          user_email: rayner.villalba@coderoad.com
           publish_branch: gh_page
